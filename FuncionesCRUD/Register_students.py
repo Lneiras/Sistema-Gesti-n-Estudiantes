@@ -27,7 +27,7 @@ def Register_student(Student_list):
         '''With 'replace' we remove spaces from the name, while 'isalpha'
         verifies that they are letters and not other types of characters.
         With 'len' we ensure that it is not empty.'''
-
+# Here we confirm if the user exists; if so, it sends an error message so we can register another one.
         exists = any(i['student'].lower() == name for i in Student_list)
         if exists:
             clean_screen()
@@ -43,7 +43,7 @@ def Register_student(Student_list):
 
         Age = input(f"{Cian}\nEnter the student's age: {Reset}").strip()
         
-        if not Age.isdigit() or int(Age)<= 0:
+        if not Age.isdigit() or int(Age)<= 0: # Here we confirm that it is a positive number
             print(f"{Rojo}Error: The age must contain only positive numbers.{Reset}")
             continue
 
@@ -54,8 +54,8 @@ def Register_student(Student_list):
     counter3 = ""
     while counter3 != 1:
 
-        course_option = Courses_menu()
-
+        course_option = Courses_menu() 
+# Here we select the course in which the student is registered and it is automatically left in active status.
         if course_option== "1":
             print(f"\n{Verde}The student was successfully enrolled in the web development course\n{Reset}")
             course = "Web Development"
@@ -74,10 +74,12 @@ def Register_student(Student_list):
         else:
             print(f"{Rojo}Invalid option, please try again.{Reset}")
             continue
-    
-    while True:
+
+    while True: #cIn this function we create a unique ID using 'random'. In this while loop we ensure that the generated number is not repeated.
         Num_id = random.randint(1000, 9999)
         if Num_id not in Student_list:
             break
 
     return {"Id": int(Num_id), "student": name, "age": int(Age), "course": course, "status": status}
+
+

@@ -26,8 +26,9 @@ def Update_student(Student_list):
             while counter1 != 1:
                 New_course = Courses_menu()
 
-                '''En este caso se realiza la creación de un diccionario con los planes disponibles para que fuese más sencillo realizar.
-                Las validaciones y, si es necesario, posteriormente realizar cambios en estos planes o agregar más sin tener que reestructurar mucho del código.'''
+                '''In this case, a dictionary of available courses is created to simplify the process. 
+                Validations can be performed, and if necessary, changes can be made to these courses or more 
+                can be added later without requiring significant code restructuring..'''
                 Courses = {
                             "1": "Web Development",
                             "2": "English",

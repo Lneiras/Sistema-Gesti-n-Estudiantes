@@ -1,4 +1,4 @@
-'''En esta función buscaremos a los estudiantes, vamos a utilizarla en las funciones de actualizar y eliminar'''
+'''In this function we will search for students; we will use it in the update and delete functions.'''
 
 from Otrasfunciones.aspectos_visuales import *
 from Otrasfunciones.Otras_funciones import *

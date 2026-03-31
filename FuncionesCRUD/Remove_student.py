@@ -1,7 +1,7 @@
 from Otrasfunciones.aspectos_visuales import *
 from FuncionesCRUD.Search_student import *
 
-#Search_student(Student_list)
+'''Here we use the search function to select the student to confirm the deletion.'''
 
 
 def Remove_student(Student_list):
