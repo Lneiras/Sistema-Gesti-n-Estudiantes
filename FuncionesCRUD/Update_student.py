@@ -39,11 +39,11 @@ def Update_student(Student_list):
                     selection = Courses[New_course]
                     
                     if student["course"] == selection:
-                        print(f"\n{Rojo}Error: The user is already registered in the '{selection}' course.{Reset}")
-                        print("Please select a different plan or type 'exit'.")
+                        print(f"\n{Rojo}Error: The student is already registered in the '{selection}' course.{Reset}")
+                        print("Please select a different course or type 'exit'.")
                         continue 
                     
-                    student["Plan"] = selection
+                    student["course"] = selection
                     print(f"\n{Verde}Student successfully registered for the course {selection}!{Reset}")
                     Coming_back()
                     counter1 = 1
@@ -52,7 +52,7 @@ def Update_student(Student_list):
                 print(f"{Rojo}Invalid option, please try again.{Reset}")
                 continue
 
-        elif update_option == "2": #Actualizar Estado plan
+        elif update_option == "2": #Actualizar Estado 
                 Loading()
                 salir = ""
                 while salir != 1:

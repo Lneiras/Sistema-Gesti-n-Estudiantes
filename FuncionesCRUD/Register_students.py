@@ -27,6 +27,7 @@ def Register_student(Student_list):
         '''With 'replace' we remove spaces from the name, while 'isalpha'
         verifies that they are letters and not other types of characters.
         With 'len' we ensure that it is not empty.'''
+
 # Here we confirm if the user exists; if so, it sends an error message so we can register another one.
         exists = any(i['student'].lower() == name for i in Student_list)
         if exists:
@@ -75,7 +76,7 @@ def Register_student(Student_list):
             print(f"{Rojo}Invalid option, please try again.{Reset}")
             continue
 
-    while True: #cIn this function we create a unique ID using 'random'. In this while loop we ensure that the generated number is not repeated.
+    while True: #In this function we create a unique ID using 'random'. In this while loop we ensure that the generated number is not repeated.
         Num_id = random.randint(1000, 9999)
         if Num_id not in Student_list:
             break

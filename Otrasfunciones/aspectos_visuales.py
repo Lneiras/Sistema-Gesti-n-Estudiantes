@@ -12,8 +12,8 @@ Cian = "\033[36m"
 Blanco = "\033[37m"
 Reset = "\033[0m"
 
-'''Esta parte es para determinar valores para agregar cuadros a la parte visual del usuario
-sin tener que agregar esa información en cada archivo de manera individual'''
+'''This section is for determining values ​​to add boxes to the user's visual display
+without having to add that information to each file individually'''
 
 
 #Dimensiones

@@ -7,7 +7,7 @@ from FuncionesCRUD.Search_student import *
 def Remove_student(Student_list):
     clean_screen()
 
-    if not Student_list:
+    if not Student_list: 
         print(f"{Azul}\nEmpty student list{Reset}")
         return
     

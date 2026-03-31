@@ -1,4 +1,4 @@
-'''En este documento tendremos las funciones adicionales y menús del programa'''
+'''This document will contain the additional functions and menus of the program.'''
 from Otrasfunciones.aspectos_visuales import *
 
 def menu():
