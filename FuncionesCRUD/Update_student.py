@@ -26,8 +26,9 @@ def Update_student(Student_list):
             while counter1 != 1:
                 New_course = Courses_menu()
 
-                '''En este caso se realiza la creación de un diccionario con los planes disponibles para que fuese más sencillo realizar.
-                Las validaciones y, si es necesario, posteriormente realizar cambios en estos planes o agregar más sin tener que reestructurar mucho del código.'''
+                '''In this case, a dictionary of available courses is created to simplify the process. 
+                Validations can be performed, and if necessary, changes can be made to these courses or more 
+                can be added later without requiring significant code restructuring..'''
                 Courses = {
                             "1": "Web Development",
                             "2": "English",
@@ -38,11 +39,11 @@ def Update_student(Student_list):
                     selection = Courses[New_course]
                     
                     if student["course"] == selection:
-                        print(f"\n{Rojo}Error: The user is already registered in the '{selection}' course.{Reset}")
-                        print("Please select a different plan or type 'exit'.")
+                        print(f"\n{Rojo}Error: The student is already registered in the '{selection}' course.{Reset}")
+                        print("Please select a different course or type 'exit'.")
                         continue 
                     
-                    student["Plan"] = selection
+                    student["course"] = selection
                     print(f"\n{Verde}Student successfully registered for the course {selection}!{Reset}")
                     Coming_back()
                     counter1 = 1
@@ -51,7 +52,7 @@ def Update_student(Student_list):
                 print(f"{Rojo}Invalid option, please try again.{Reset}")
                 continue
 
-        elif update_option == "2": #Actualizar Estado plan
+        elif update_option == "2": #Actualizar Estado 
                 Loading()
                 salir = ""
                 while salir != 1:

@@ -1,4 +1,4 @@
-'''En esta función buscaremos a los estudiantes, vamos a utilizarla en las funciones de actualizar y eliminar'''
+'''In this function we will search for students; we will use it in the update and delete functions.'''
 
 from Otrasfunciones.aspectos_visuales import *
 from Otrasfunciones.Otras_funciones import *
@@ -56,7 +56,7 @@ def Search_student(Student_list):
                     print(f"{edgeC}")                
                     return name
                 else:
-                    print(f"\n{Rojo}Error: The client name '{searched_name}' does not exist {Reset}")
+                    print(f"\n{Rojo}Error: The student name '{searched_name}' does not exist {Reset}")
                     print("Try again...\n")
                     continue
         
@@ -65,7 +65,7 @@ def Search_student(Student_list):
             counter2 = ""
             while counter2 != 1: 
 
-                searched_ID = input("\nEnter the customer ID (or type 'exit' to return to the menu): ").strip().lower()
+                searched_ID = input("\nEnter the student ID (or type 'exit' to return to the menu): ").strip().lower()
 
                 if searched_ID == "exit": 
                     print(f"\n{Amarillo}Search canceled{Reset}")
@@ -84,7 +84,7 @@ def Search_student(Student_list):
                     print(f"{edgeC}")                
                     return Num_id
                 else:
-                    print(f"\n{Rojo}Error: The client ID '{searched_ID}' does not exist.{Reset}")
+                    print(f"\n{Rojo}Error: The student ID '{searched_ID}' does not exist.{Reset}")
                     print("Try again...\n")
                     continue
         
